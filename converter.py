@@ -8,7 +8,7 @@ class Converter:
         self.temp_to_convert = temp
 
     def toCelsius(self):
-        self.converted_temp = self.temp_to_convert - 32.0 * 5.0 / 9.0
+        self.converted_temp = (self.temp_to_convert - 32.0) * 5.0 / 9.0
 
     def toFahrenheit(self):
         self.converted_temp = self.temp_to_convert * 9.0 / 5.0 + 32.0
