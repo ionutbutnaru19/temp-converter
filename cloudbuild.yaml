@@ -21,7 +21,7 @@ steps:
 # deploy to app engine 
 - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
   entrypoint: 'bash'
-  args: ['-c', 'gcloud config set app/cloud_build_timeout 900 && gcloud app deploy --version=$TAG_NAME --no-promote']
+  args: ['-c', 'gcloud config set app/cloud_build_timeout 900 && gcloud app deploy --version=$TAG_NAME']
   timeout: '900s'    
 
 
