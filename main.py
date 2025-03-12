@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def main():
-    model = {"title":"Welcome to Ionut's Converter App!"}
+    model = {"title":"Welcome to Ionut's Converter App!**VER 2-0**"}
     return render_template('index.html', model=model)
 
 @app.route("/temp-converter")
